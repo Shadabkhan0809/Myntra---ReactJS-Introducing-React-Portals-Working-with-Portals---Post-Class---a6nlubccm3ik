@@ -1,0 +1,51 @@
+<i>Details</i>
+<ol>
+<ul>nav bar:-
+<li>The website should have a navigation section. Created using nav var.</li>
+<li>The nav bar should have logo of your website enclosed around a div tag with class icon-holder.</li>
+<li>The nav bar should have a search bar, which on Enter keydown event will do a case insensitive search over name and  descripiton of products, If a product's name or description contains the text in the input tag then it should be rendered in the div tag with id <code>product-tile-holder</code>.</li>
+<li>The nav bar should also contain a cart svg ( can be found in the src folder with name <code>shopping-cart-solid.svg</code>). It should be enclosed in div tag with class <code>cart-holder</code></li>
+<li>Number of product(simple number) in the cart should be shown in the nav bar. And should be enclosed in div with class name <code>cart-list-length</code></li>
+</ul>
+<ul>Filters:- 
+<li>Provide option to choose either Male or Female.(use radio button). Should be part of the same radio group(should only be able to choose one). By default select Male. This section should have a heading <code>Gender</code>.</li>
+<li>Provide options to only display white shirts.(use checkbox) along with the label with text <code>White</code>.</li>
+<li>Provide options to only display Folded Sleeves shirts.(use checkbox) along with the label with text <code>Folded Sleeves</code>.By default no option should be selected.This section should have a heading <code>Categories</code>.</li>
+</ul>
+<ul>Sorting:-
+<li>Render a dropdown using select tag to display sorting options. Should be able to sort the clothes depending on when they entered the market(<code>What's New</code>), prices(<code>Price low to high</code>), discounts (<code>Better Discount</code>). By default the data is arranged by the date they entered the market. To sort by price use <code>finalPrice</code> value . To sort by discounts use discounts value of the product.</li>
+<li>Enclose this section in div tag with class <code>sort-holder</code>.</li>
+</ul>
+<ul>Content:-
+<li>Should render all products in a div tag with class <code>product-tile-holder</code>.</li>
+<li>Each product should be rendered in a div tag with class <code>indiv-tile-holder</code>.</li>
+<li>For each prodcut render its image(first link in otherImages), brand(name),descripition,price(finalPrice),old price(strikePrice), discount.</li>
+<li>Old price should be enclosed in stike tag.</li>
+<li>Final price should have format <code>Rs. 554</code>.</li>
+<li>Discount text should have format like <code>60% OFF</code>. Its font color should be red.</li>
+<li>Description should be in italics.</li>
+<li>Image should have width 200px.</li>
+</ul>
+<ul>Product Modal:-
+<li>On click event on any <code>indiv-tile-holder<code> a modal should open up.</li>
+<li>Modal's content should be enclosed in div with id <code>product-modal</code>.</li>
+<li>When no product is selected then <code>#product-modal</code> should not be rendered(not to render is differnt from <code>display:none</code>) :)</li>
+<li>This modal contains all the images given in <code>otherImages</code> value of data.js for each product.</li>
+<li>Show render a close option with text <a href="https://www.google.com/search?channel=fs&client=ubuntu&q=%26times%3B">&times;</a>. On click of this text the modal should close.</li>
+<li>Modal should all the sizes available for the product.Enclose each size option in div tag with class <code>size-option</code>. The size could be in different formats. Render like <code> &lt div class="size-option" &gt XXL&lt /div&gt. For the size section render a heading <code>Size Char</code>.<li>
+<li>Modal should have all the other details like name,description,discount,price(both)</li>
+<li>Should render a button to add the product to cart. If product is added after selecting the size then the cart should remember the size selection.</li>
+<li>On hover over the <code>size-option</code> its fonts color should be white and background should be red.</li>
+<li>When <code>Add to Cart</code> button is clicked it should update cart immediately along with the new product and updated <code>cart-list-length</code>.</li>
+</ul>
+<ul>Cart:-
+<li>Should pop up when <code>.cart-holder</code> is clicked</li>
+<li>The cart modal should have id <code>cart-modal-content</code></li>
+<li>It should contain all the selected Product details(name ,descripition,finalPrice , strikePrice,discount).</li>
+<li>It should calculate the Total items in the cart and display them as <code>Total Items 5</code></li>
+<li>It should calculate the Total Orignal Price(sum of strikePrice) in the cart and display them as <code>Total Orignal Price 999</code></li>
+<li>It should calculate the Total Discount(<code>sum of (strikePrice - finalPrice)</code>) in the cart and display them as <code>Total Discount 1125</code></li>
+<li>It should calculate the Final Price(sum of finalPrice) in the cart and display them as <code>Final Price 5778</code></li>
+<li>Render a Buy button</li>
+</ul>   
+</ol>
